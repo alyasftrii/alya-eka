@@ -57,6 +57,10 @@ Route::group(['prefix' => 'admin'], function() {
     Route::resource('produk', ProdukController::class);
 });
 
+Route::get('/mahasiswa', function () {
+    return view('mahasiswa/index');
+});
+
 Route::group(['prefix' => 'mahasiswa'], function() {
     Route::get('/mahasiswa', 'DashboardController@index');
     Route::get('pendaftaran', function () {
