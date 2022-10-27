@@ -60,7 +60,7 @@ Route::group(['prefix' => 'admin'], function() {
 Route::group(['prefix' => 'mahasiswa'], function() {
     Route::get('/mahasiswa', 'DashboardController@index');
     Route::get('pendaftaran', function () {
-        return "Halaman pendaftaran";
+        return "Halaman pendaftaran coba";
     });
     Route::get('ujian', function () {
         return "halaman ujian";
